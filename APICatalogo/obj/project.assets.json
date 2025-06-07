@@ -469,23 +469,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jose C. Macoratti\\.nuget\\packages\\": {},
-    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\gugum\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\___Cursos_Macoratti\\Curso_Web_API_NET8_Essencial\\3_Cria_API_VisualStudio\\3_CriaProjetoNET8\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
+      "projectUniqueName": "D:\\Workspace\\curso-dot-net-8\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
       "projectName": "APICatalogo",
-      "projectPath": "D:\\___Cursos_Macoratti\\Curso_Web_API_NET8_Essencial\\3_Cria_API_VisualStudio\\3_CriaProjetoNET8\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
-      "packagesPath": "C:\\Users\\Jose C. Macoratti\\.nuget\\packages\\",
-      "outputPath": "D:\\___Cursos_Macoratti\\Curso_Web_API_NET8_Essencial\\3_Cria_API_VisualStudio\\3_CriaProjetoNET8\\APICatalogo\\APICatalogo\\obj\\",
+      "projectPath": "D:\\Workspace\\curso-dot-net-8\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
+      "packagesPath": "C:\\Users\\gugum\\.nuget\\packages\\",
+      "outputPath": "D:\\Workspace\\curso-dot-net-8\\APICatalogo\\APICatalogo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Jose C. Macoratti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gugum\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -494,7 +494,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -507,7 +506,13 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -541,7 +546,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
