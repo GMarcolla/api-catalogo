@@ -47,7 +47,7 @@ api-catalogo/
 
 2. Abra o projeto no Visual Studio 2022 ou superior.
 
-3. Configure a string de conexão com o SQL Server no arquivo `appsettings.json`.
+3. Configure a string de conexão com o server My SQL no arquivo `appsettings.json`.
 
 4. Aplique as migrações e crie o banco de dados:
    ```bash
