@@ -8,7 +8,7 @@ Este projeto foi desenvolvido como parte de um curso de Web APIs com .NET 8, ten
 - **ASP.NET Core Web API** – Para a criação dos endpoints REST.
 - **C#** – Linguagem de programação utilizada.
 - **Entity Framework Core** – ORM para manipulação do banco de dados.
-- **SQL Server** – Sistema gerenciador de banco de dados relacional.
+- **My SQL** – Sistema gerenciador de banco de dados relacional.
 - **Swagger / Swashbuckle** – Para documentação e teste dos endpoints.
 
 ## 📚 Funcionalidades da API
