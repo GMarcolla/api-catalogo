@@ -157,6 +157,32 @@
   },
   {
     "ContainingType": "APICatalogo.Controllers.ProdutosController",
+    "Method": "GetCategoriaProduto",
+    "RelativePath": "Produtos/Categoria/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "APICatalogo.Controllers.CategoriaProduto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APICatalogo.Controllers.ProdutosController",
     "Method": "Get",
     "RelativePath": "Produtos/{id}",
     "HttpMethod": "GET",

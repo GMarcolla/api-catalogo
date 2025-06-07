@@ -19,7 +19,7 @@ namespace APICatalogo.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Produto>> Get()
         {
-            var produtos = _context.Produtos.Include(c => c).AsNoTracking().ToList();
+            var produtos = _context.Produtos.Include(p => p.Categoria).AsNoTracking().ToList();
 
             if (produtos is null)
             {
@@ -27,6 +27,20 @@ namespace APICatalogo.Controllers
             }
 
             return produtos;
+        }
+
+        [HttpGet("Categoria/{id:int}")]
+        public ActionResult<CategoriaProduto> GetCategoriaProduto(int id)
+        {
+            var p = _context.Produtos.Include(p => p.Categoria).AsNoTracking().FirstOrDefault(p => p.ProdutoId == id);
+
+            CategoriaProduto categoriaProduto = new CategoriaProduto();
+       
+            categoriaProduto.ProdutoId = p.ProdutoId;
+            categoriaProduto.Categoria = p.Categoria?.Nome;
+            categoriaProduto.ImagemCategoria = p.Categoria?.ImagemUrl;
+                        
+            return categoriaProduto;
         }
 
         [HttpGet("{id:int}", Name ="ObterProduto")]
@@ -80,5 +94,12 @@ namespace APICatalogo.Controllers
 
             return Ok();
         }
+    }
+
+    public class CategoriaProduto()
+    {
+        public int ProdutoId { get; set; }
+        public string? Categoria { get; set; }
+        public string? ImagemCategoria { get; set; }
     }
 }

@@ -33,7 +33,6 @@ namespace APICatalogo.Models
         
         public int CategoriaId { get; set; }
 
-        [JsonIgnore]
         public Categoria? Categoria { get; set; }
     }
 }
