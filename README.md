@@ -1,6 +1,6 @@
 # 📦 API Catálogo
 
-Este projeto foi desenvolvido como parte de um curso de Web APIs com .NET 8, tendo como foco a construção de uma API RESTful para gerenciar um catálogo de produtos. Ele serve como base para estudos de conceitos como arquitetura em camadas, uso do Entity Framework, boas práticas de desenvolvimento, e integração com SQL Server.
+Este projeto foi desenvolvido como parte de um curso de Web APIs com .NET 8, tendo como foco a construção de uma API RESTful para gerenciar um catálogo de produtos. Ele serve como base para estudos de conceitos como arquitetura em camadas, uso do Entity Framework, boas práticas de desenvolvimento, e integração com o My SQL.
 
 ## 🚀 Tecnologias Utilizadas
 
