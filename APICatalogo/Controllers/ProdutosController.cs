@@ -29,6 +29,19 @@ namespace APICatalogo.Controllers
             return produtos;
         }
 
+        [HttpGet("get-async")]
+        public async Task<ActionResult<IEnumerable<Produto>>> GetAsync()
+        {
+            var produtos = await _context.Produtos.Include(p => p.Categoria).AsNoTracking().ToListAsync();
+
+            if (produtos is null)
+            {
+                return NotFound();
+            }
+
+            return produtos;
+        }
+
         [HttpGet("Categoria/{id:int}")]
         public ActionResult<CategoriaProduto> GetCategoriaProduto(int id)
         {

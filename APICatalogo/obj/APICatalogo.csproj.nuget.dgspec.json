@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Workspace\\curso-dot-net-8\\APICatalogo\\APICatalogo\\APICatalogo.csproj": {}
+    "C:\\Workspace\\CursoNet8\\api-catalogo\\APICatalogo\\APICatalogo.csproj": {}
   },
   "projects": {
-    "D:\\Workspace\\curso-dot-net-8\\APICatalogo\\APICatalogo\\APICatalogo.csproj": {
+    "C:\\Workspace\\CursoNet8\\api-catalogo\\APICatalogo\\APICatalogo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Workspace\\curso-dot-net-8\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
+        "projectUniqueName": "C:\\Workspace\\CursoNet8\\api-catalogo\\APICatalogo\\APICatalogo.csproj",
         "projectName": "APICatalogo",
-        "projectPath": "D:\\Workspace\\curso-dot-net-8\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
-        "packagesPath": "C:\\Users\\gugum\\.nuget\\packages\\",
-        "outputPath": "D:\\Workspace\\curso-dot-net-8\\APICatalogo\\APICatalogo\\obj\\",
+        "projectPath": "C:\\Workspace\\CursoNet8\\api-catalogo\\APICatalogo\\APICatalogo.csproj",
+        "packagesPath": "C:\\Users\\Gustavo.Marcolla\\.nuget\\packages\\",
+        "outputPath": "C:\\Workspace\\CursoNet8\\api-catalogo\\APICatalogo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\gugum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Gustavo.Marcolla\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
