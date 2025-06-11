@@ -1,6 +1,7 @@
 ﻿using APICatalogo.Context;
 using APICatalogo.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.EntityFrameworkCore;
 
 namespace APICatalogo.Controllers
@@ -61,6 +62,19 @@ namespace APICatalogo.Controllers
         {
             var produto = _context.Produtos.AsNoTracking().FirstOrDefault(p => p.ProdutoId == id);
             
+            if (produto is null)
+            {
+                return NotFound("Produto não encontrado...");
+            }
+
+            return produto;
+        }
+
+        [HttpGet("get-nome-obrigatorio/{id:int}")]
+        public ActionResult<Produto> Get(int id, [BindRequired] string nome)
+        {
+            var produto = _context.Produtos.AsNoTracking().FirstOrDefault(p => p.ProdutoId == id);
+
             if (produto is null)
             {
                 return NotFound("Produto não encontrado...");
