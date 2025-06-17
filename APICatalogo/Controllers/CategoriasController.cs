@@ -1,5 +1,6 @@
 ﻿using APICatalogo.Context;
 using APICatalogo.Models;
+using APICatalogo.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -79,6 +80,18 @@ namespace APICatalogo.Controllers
             _context.Categorias.Remove(categoria);
             _context.SaveChanges();
             return Ok(categoria);
+        }
+
+        [HttpGet("UsandoFromServices/{nome}")]
+        public ActionResult<String> GetSaudacaoFromServices([FromServices] IMeuServico meuServico, string nome)
+        {
+            return meuServico.Saudacao(nome);
+        }
+
+        [HttpGet("SemUsarFromServices/{nome}")]
+        public ActionResult<String> GetSaudacaoSemUsarServices(IMeuServico meuServico, string nome)
+        {
+            return meuServico.Saudacao(nome);
         }
 
     }
