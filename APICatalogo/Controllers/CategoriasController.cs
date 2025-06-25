@@ -12,10 +12,23 @@ namespace APICatalogo.Controllers
     public class CategoriasController : ControllerBase
     {
         private readonly AppDbContext _context;
+        private readonly IConfiguration _configuration;
 
-        public CategoriasController(AppDbContext context)
+        public CategoriasController(AppDbContext context,
+            IConfiguration configuration)
         {
             _context = context;
+            _configuration = configuration; 
+        }
+
+        [HttpGet("LerArquivoConfig")]
+        public string GetValores()
+        {
+            var valor = _configuration["chave1"];
+            var valor2 = _configuration["chave2"];
+            var secao1 = _configuration["secao1:chave2"];
+
+            return $"Chave1 = {valor} | Chave2 = {valor2} | Seção1 => Chave2 = {secao1}";
         }
 
         [HttpGet("produtos")]
